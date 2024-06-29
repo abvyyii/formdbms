@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    
+    
+    <body>
+        <div class="navbar">
+            <label class="logo">XYZ COLLEGE</label>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="Cont">
+        <h1>Registeration Form</h1>
+        <form class="form_" action="cons.php" method="POST">
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" placeholder="First Name.." name="firstname" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" placeholder="Last Name.." name="lastname" required></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date" placeholder="DOB" name="dob" required></td>
+                </tr>
+                <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="someone@domain.com" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>Male<input type="radio" Name="gender" value="m"required><br>
+                    Female<input type="radio" Name="gender" value="f"required></td>
+                </tr>
+                <tr>
+                    <td>PhoneNo.:</td>
+                    <td><input type="number" name="phno" placeholder="Contact Number.." required></td>
+                </tr>
+                <tr>
+                <td>
+                    <br>
+                    <button type="submit" value="Submit">Submit</button>
+                </td>
+                <td>
+                    <br>
+                    <button type="Reset">Reset</button>
+                </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </body>
+</html>

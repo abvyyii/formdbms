@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+*{
+    text-decoration: none;
+    list-style: none;
+    margin-left:0%;
+    margin-top: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(28, 28, 28);
+    color:white;
+   
+}
+
+h1{
+    padding-left:10px ;
+}
+.navbar{
+    background-color: black;
+    float: left;
+    width: 100%;
+    height: 70px;
+
+}
+label.logo{
+    color: gold;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.navbar ul{
+    float:right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    display:inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+}
+.navbar ul li a{
+        color: white;
+        font-size: 17px;
+        text-align: center;
+        padding: 14px 16px;
+}
+.navbar ul li a:hover{
+    color: gold;
+    transition: all 0.5s;
+}
+form table{
+font-weight:bold ;
+}
+form table button{
+    font-size: 16px;
+    height:35px;
+    width:70px;
+    border-color: gold;
+    border-radius: 10%;
+    border-width: 3.3px;
+}
+form table button:hover{
+    background-color: gold;
+    color:white;
+    transition: all 0.5s;
+    font-weight: bold;
+    border-color: white;
+}
+.cont{
+    margin: auto;
+    padding: auto;
+}
+.cont input{
+    border-color: rgb(255, 255, 247);
+    background-color: rgb(204, 204, 204);
+}
