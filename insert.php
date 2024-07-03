@@ -10,7 +10,7 @@ if(!empty($firstname) || !empty($lastname) || !empty($dob) || !empty($email) ||!
     $host="localhost";
     $dbUsername="root";
     $dbPassword="";
-    $dbname="form";
+    $database_name="form";
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 
