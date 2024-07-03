@@ -12,10 +12,10 @@ if(!empty($firstname) || !empty($lastname) || !empty($dob) || !empty($email) ||!
     $dbPassword="";
     $database_name="form";
 
-    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+    $conn = mysqli_connect($host, $dbUsername, $dbPassword, $dbname);
 
     if(mysqli_connect_error()){
-        die('Connect Error('. mysqli_connect_error().')'. mysqli_connect_error());
+        die("Connection error: ". mysqli_coonect_error());
     } else{
         $SELECT = "SELECT email From table1 where email= ? Limit 1";
         $INSERT = "INSERT into table1 (firstname, lastname, dob, email, gender, phno) values(?,?,?,?,?,?)";
