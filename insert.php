@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $gender = $_POST['gender'];
 $phno = $_POST['phno'];
 
-if(!empty($firstname) || !empty($lastname) || !empty($dob) || !empty($email) ||!empty($gender) || !empty($phno)) {
+if (!empty($firstname) && !empty($lastname) && !empty($dob) && !empty($email) && !empty($gender) && !empty($phno)) {
     $host="localhost";
     $dbUsername="root";
     $dbPassword="";
@@ -31,7 +31,7 @@ if(!empty($firstname) || !empty($lastname) || !empty($dob) || !empty($email) ||!
             $stmt->close();
 
             $stmt = $conn->prepare($INSERT);
-            $stmt->bind_param("sssssi", $firstname, $lastname, $dob, $gender, $email, $phno);
+            $stmt->bind_param("sssssi", $firstname, $lastname, $dob, $email, $gender, $phno);
             $stmt->execute();
             echo "New record inserted sucessfully";
 
