@@ -9,7 +9,8 @@
 
 body{
     font-family: 'Poppins',sans-serif;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(37, 37, 37);
+    background-repeat: no-repeat;
     color:white;
    
 }
@@ -24,13 +25,22 @@ h1{
     height: 70px;
 
 }
+.navbar img{
+    height: 60px;
+    float: left;
+    margin-top: 5px;
+}
 label.logo{
-    color: gold;
+    color: rgb(117, 154, 255);
     font-size: 35px;
     line-height: 80px;
-    padding:0 100px;
+    margin: 0 30px;
     font-weight: bold;
     cursor:pointer;
+    
+}
+h1{
+    color:rgb(182, 211, 255);
 }
 .navbar ul{
     float:right;
@@ -48,32 +58,39 @@ label.logo{
         padding: 14px 16px;
 }
 .navbar ul li a:hover{
-    color: gold;
+    color: rgb(101, 161, 251);
     transition: all 0.5s;
 }
 form table{
 font-weight:bold ;
 }
 form table button{
+    border:solid 0.5px rgb(255, 255, 255);
     font-size: 16px;
     height:35px;
     width:70px;
-    border-color: gold;
-    border-radius: 10%;
-    border-width: 3.3px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.175);
 }
 form table button:hover{
-    background-color: gold;
-    color:white;
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    transform: scale(1.1);
     transition: all 0.5s;
     font-weight: bold;
-    border-color: white;
 }
 .cont{
     margin: auto;
     padding: auto;
 }
+.cont ::placeholder{
+    color:white;
+}
 .cont input{
-    border-color: rgb(255, 255, 247);
-    background-color: rgb(204, 204, 204);
+    border:solid 0.5px rgb(255, 255, 255);
+    background-color: rgba(204, 204, 204, 0.333);
+    border-radius:10px ;
+    height: 25px;
+    width: 250px;
+    color: white;
 }
